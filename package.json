@@ -1,0 +1,29 @@
+{
+  "author"         : "Ben Ipsen <email@benipsen.com>",
+  "name"           : "handlebar-rider",
+  "description"    : "Watches a directory and precompiles handlebars templates",
+  "version"        : "0.1.0",
+
+  "repository"     : {
+    "type"           : "git",
+    "url"            : "http://github.com/cif/handlebar-rider"
+  },
+
+  "main"           : "./lib/handlebar-rider.js",
+    "directories"    : {
+    "lib"            : "./lib/"
+  },
+
+  "bin"            : {
+    "handlebar-rider": "./bin/handlebar-rider"
+  },
+
+  "engines"        : {
+    "node"           : ">= 0.4.9"
+  },
+  
+  "dependencies"   : {
+    "handlebars"  : "1.x",
+    "uglify-js"      : "1.1.1"
+  }
+}
