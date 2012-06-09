@@ -1,4 +1,4 @@
-handlbar-rider
+handlebar-rider
 ================
 
 Command line tool that will watch a handlebars template directory pre-compile containing handlebars template files and concatenate them 
