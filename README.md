@@ -4,6 +4,11 @@ handlbar-rider
 Command line tool that will watch a handlebars template directory and recompile them to a single file in build/public. 
 The templates will be available in Handlebars.templates.filename (without the extension). See [Handlebars Precompiler](http://handlebarsjs.com/precompilation.html) documentation for more info.
 
+Install:
+    
+    git clone https://github.com/cif/handlebar-rider.git
+		npm install -g handlebar-rider
+
 Usage:
 
     handlebar-rider path/to/your/handlebars/dir/
