@@ -9,7 +9,7 @@ Templates will be available in Handlebars.templates.filename (without the extens
 Install:
     
     git clone https://github.com/cif/handlebar-rider.git
-npm install -g handlebar-rider
+    npm install -g handlebar-rider
 
 Usage:
 
