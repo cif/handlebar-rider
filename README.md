@@ -10,6 +10,6 @@ Usage:
 
     options:
 			
-			--out				The destination file to compile your templates to.  Default is public/javascript/templates.js
+			--out	The destination file to compile your templates to.  Default is public/javascript/templates.js
 			
 			--readable  This will avoid uglifying your output javascript.   
