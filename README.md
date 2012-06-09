@@ -1,8 +1,10 @@
 handlbar-rider
 ================
 
-Command line tool that will watch a handlebars template directory and recompile them to a single file in build/public. 
-The templates will be available in Handlebars.templates.filename (without the extension). See [Handlebars Precompiler](http://handlebarsjs.com/precompilation.html) documentation for more info.
+Command line tool that will watch a handlebars template directory pre-compile containing handlebars template files and concatenate them 
+into a single javascript file in build/public. 
+
+Templates will be available in Handlebars.templates.filename (without the extension). See [Handlebars Precompiler](http://handlebarsjs.com/precompilation.html) documentation for more info.
 
 Install:
     
