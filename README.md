@@ -33,8 +33,8 @@ There are two methods for using partials within your templates:
  
 #### 1. Global partials 
 
-If you create a partials in a directory, aptly called "partials" which lives within your handlebars templates directory, the
-handlebars files will be pre compile and available in your templates 
+If you a directory within your templates directory, aptly called "partials", the
+handlebars files will be pre compile and become available in your templates as partial_name
 
 #### 2. Scoped partials
 
