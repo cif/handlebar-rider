@@ -2,12 +2,10 @@ handlebar-rider
 ================
 
 Command line tool that will watch a handlebars template directory pre-compile containing handlebars template files and concatenate them 
-into a single javascript file in build/public.  The directory structure you use will namespace the templates as expected with JST et all
+into a single javascript file in build/public.  
 
-Run-time usage example: 
+The directory structure you use will namespace the templates with ['directory/template'] as with JST et all
 
-    html_output = Handlebars.templates['users/view'](data)
- 
 
 Install:
 
@@ -23,3 +21,42 @@ Usage:
 			
 			--readable  This will avoid uglifying your output javascript.   
 			
+					
+Run-time usage example: 
+
+    html_output = Handlebars.templates['users/view'](data)
+
+ 
+Partial Support/Conventions:
+
+There are two methods for using partials within your templates:
+ 
+1. Global partials 
+
+If you create a partials in a directory, aptly called "partials" which lives within your handlebars templates directory, the
+handlebars files will be pre compile and available in your templates 
+
+2. Scoped partials
+
+If you prefix your template file name with an underscore, you can can access it as directory_partial 
+
+Example directory structure:
+
+    templates 
+      -- users
+          - _list.hb
+          - _form.hb
+          - edit.hb
+          - view.hb
+      
+      -- partials
+          - photo_uploader.hb
+
+
+And usage: 
+
+    <h1>Edit User</h1>
+    {{> users_list}}
+    {{> users_form}}
+ 
+
