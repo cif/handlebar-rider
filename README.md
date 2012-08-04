@@ -1,15 +1,15 @@
 # handlebar-rider
 ================
 
-Command line tool that will watch a handlebars template directory pre-compile containing handlebars template files and concatenate them 
-into a single javascript file in build/public.  
+This is a module and command line tool that will compile/watch a handlebars template directory and pre-compile any handlebars template files then 
+concatenate them into a single javascript file.  
 
 The directory structure you use will namespace the templates with ['directory/template'] as with JST et all
 
 
 ## Install:
 
-		npm install -g handlebar-rider
+    npm install -g handlebar-rider
 
 ## Command line usage:
 
