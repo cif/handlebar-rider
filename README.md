@@ -1,4 +1,4 @@
-handlebar-rider
+# handlebar-rider
 ================
 
 Command line tool that will watch a handlebars template directory pre-compile containing handlebars template files and concatenate them 
@@ -7,11 +7,11 @@ into a single javascript file in build/public.
 The directory structure you use will namespace the templates with ['directory/template'] as with JST et all
 
 
-Install:
+## Install:
 
 		npm install -g handlebar-rider
 
-Usage:
+## Usage:
 
     handlebar-rider path/to/your/handlebars/dir/
 
@@ -22,12 +22,12 @@ Usage:
 			--readable  This will avoid uglifying your output javascript.   
 			
 					
-Run-time usage example: 
+## Run-time usage example: 
 
     html_output = Handlebars.templates['users/view'](data)
 
  
-Partial Support/Conventions:
+## Partial Support/Conventions:
 
 There are two methods for using partials within your templates:
  
@@ -40,7 +40,7 @@ handlebars files will be pre compile and available in your templates
 
 If you prefix your template file name with an underscore, you can can access it as directory_partial 
 
-Example directory structure:
+### Example directory structure:
 
     templates 
       -- users
@@ -53,10 +53,11 @@ Example directory structure:
           - photo_uploader.hb
 
 
-And usage: 
+### And usage: 
 
     <h1>Edit User</h1>
     {{> users_list}}
     {{> users_form}}
+    {{> photo_uploader}}
  
 
