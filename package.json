@@ -2,7 +2,7 @@
   "author"         : "Ben Ipsen <email@benipsen.com>",
   "name"           : "handlebar-rider",
   "description"    : "Watches a directory and precompiles handlebars templates",
-  "version"        : "0.1.4",
+  "version"        : "0.1.5",
 
   "repository"     : {
     "type"           : "git",
@@ -23,7 +23,8 @@
   },
   
   "dependencies"   : {
-    "handlebars"  : "1.x",
-    "uglify-js"      : "1.1.1"
+    "handlebars"  : ">= 1.x",
+    "uglify-js"   : "1.1.1",
+    "optimist"    : ">= 0.3.4"
   }
 }

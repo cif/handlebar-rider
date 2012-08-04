@@ -5,26 +5,4 @@ var fs = require('fs');
 var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 
 hbr = require(lib + '/handlebar-rider')
-
-
-//get options specified on command line
-var opts = process.argv.splice(2);
-var dir = opts[0] ? opts[0] : hbr.rider.templates_dir;
-hbr.rider.templates_dir = dir;
-
-//scan through remaning arguments and set appropriate variables
-for(var o = 1; o < opts.length; o++){
-  if(opts[o] == '--out' && typeof opts[o+1] != undefined){
-    hbr.rider.outfile = opts[o+1];
-  }
-  if(opts[o] == '--readable'){
-    hbr.rider.minify = false;
-  }
-}
-
-
-//compile on startup
-console.log(hbr.color.green + '[handlebar-rider] Compiling template directory ' + dir + ' to ' + hbr.rider.outfile + hbr.color.reset);
-console.log(hbr.color.yellow + '[handlebar-rider] Watching template directory ' + dir  + hbr.color.reset);
-
-hbr.readAndCompile(dir);
+hbr.run()
