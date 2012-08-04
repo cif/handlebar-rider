@@ -11,17 +11,25 @@ The directory structure you use will namespace the templates with ['directory/te
 
 		npm install -g handlebar-rider
 
-## Usage:
+## Command line usage:
 
-    handlebar-rider path/to/your/handlebars/dir/
+    Command Line Usage: 
 
-    options:
-			
-			--out	The destination file to compile your templates to.  Default is public/javascript/templates.js
-			
-			--readable  This will avoid uglifying your output javascript.   
-			
-					
+    Options:
+      -i, --in        Specify an input templates directory                            [default: "./app/handlebars/"]
+      -o, --out       Specify an output file into which templates are compiled        [default: "./public/javascript/templates.js"]
+      -r, --readable  Make the output more readable by avoiding default minification  [default: false]
+   
+## npm module usage			
+
+		hbr = require('handlebar-rider')
+		hrb.configure({
+		  templates_dir: '/path/to/your/templates/'
+		  outfile: '/path/to/output.js',
+		  minify: false
+		})
+		hbr.run()
+				
 ## Run-time usage example: 
 
     html_output = Handlebars.templates['users/view'](data)
