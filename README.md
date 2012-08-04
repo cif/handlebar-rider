@@ -31,12 +31,12 @@ The directory structure you use will namespace the templates with ['directory/te
 
 There are two methods for using partials within your templates:
  
-1. Global partials 
+#### 1. Global partials 
 
 If you create a partials in a directory, aptly called "partials" which lives within your handlebars templates directory, the
 handlebars files will be pre compile and available in your templates 
 
-2. Scoped partials
+#### 2. Scoped partials
 
 If you prefix your template file name with an underscore, you can can access it as directory_partial 
 
