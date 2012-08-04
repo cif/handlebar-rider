@@ -18,17 +18,21 @@ The directory structure you use will namespace the templates with ['directory/te
     Options:
       -i, --in        Specify an input templates directory                            [default: "./app/handlebars/"]
       -o, --out       Specify an output file into which templates are compiled        [default: "./public/javascript/templates.js"]
+      -w, --watch     Watch your handlebars files and compile when changes occur      [default: false]
       -r, --readable  Make the output more readable by avoiding default minification  [default: false]
-   
+      
+    
+
 ## npm module usage			
 
 		hbr = require('handlebar-rider')
 		hrb.configure({
-		  templates_dir: '/path/to/your/templates/'
-		  outfile: '/path/to/output.js',
+		  in: '/path/to/your/templates/'
+		  out: '/path/to/output.js',
 		  minify: false
 		})
-		hbr.run()
+		hbr.compile()
+		hbr.watch()
 				
 ## Run-time usage example: 
 
