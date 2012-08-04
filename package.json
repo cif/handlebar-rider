@@ -2,7 +2,7 @@
   "author"         : "Ben Ipsen <email@benipsen.com>",
   "name"           : "handlebar-rider",
   "description"    : "Watches a directory and precompiles handlebars templates",
-  "version"        : "0.1.0",
+  "version"        : "0.1.2",
 
   "repository"     : {
     "type"           : "git",
