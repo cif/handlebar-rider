@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/cif/handlebar-rider.png)](http://travis-ci.org/cif/handlebar-rider)
 # handlebar-rider
 ================
 
