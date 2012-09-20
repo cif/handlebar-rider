@@ -6,6 +6,7 @@ concatenate them into a single javascript file.
 
 The directory structure you use will namespace the templates with ['directory/template'] as with JST et all
 
+UPDATE 9.20.2012 - I have merged this library with Flint (http://github.com/cif/flint) however, changes contributed by others are welcome and always merged.
 
 ## Install:
 
@@ -26,7 +27,7 @@ The directory structure you use will namespace the templates with ['directory/te
 ## npm module usage			
 
 		hbr = require('handlebar-rider')
-		hrb.configure({
+		hbr.configure({
 		  in: '/path/to/your/templates/'
 		  out: '/path/to/output.js',
 		  minify: false
@@ -45,7 +46,7 @@ There are two methods for using partials within your templates:
  
 #### 1. Global partials 
 
-If you a directory within your templates directory, aptly called "partials", the
+If you create a directory within your templates directory aptly called "partials", the
 handlebars files will be pre compile and become available in your templates as partial_name
 
 #### 2. Scoped partials
