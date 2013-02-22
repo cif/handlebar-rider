@@ -1,6 +1,6 @@
 {
   "author"         : "Ben Ipsen <email@benipsen.com>",
-  "name"           : "handlebar-rider-fix",
+  "name"           : "handlebar-rider",
   "description"    : "Compiles/watches a directory of handlebar templates files and precompiles into single js output file",
   "version"        : "0.1.11",
 
