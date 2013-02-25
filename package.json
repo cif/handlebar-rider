@@ -22,10 +22,13 @@
     "node"           : ">= 0.4.9"
   },
   
-  "dependencies"   : {
-    "handlebars"  : ">= 1.x",
-    "uglify-js"   : "1.1.1",
-    "optimist"    : ">= 0.3.4",
-    "supercli"    : "*"
+  "dependencies" : {
+    "handlebars" : ">= 1.x",
+    "uglify-js" : "1.1.1",
+    "optimist" : ">= 0.3.4",
+    "supercli" : "*",
+    "underscore" : "*",
+    "watch" : "*",
+    "async" : "*"
   }
 }
