@@ -6,6 +6,8 @@ concatenate them into a single javascript file.
 
 The directory structure you use will namespace the templates with ['directory/template'] as with JST et all
 
+UPDATE 2.25.2013 - @piercemoore has contributed some AMAZING updates to this project available on the command line.
+
 UPDATE 9.20.2012 - I have merged this library with Flint (http://github.com/cif/flint) however, changes contributed by others are welcome and always merged.
 
 ## Install:
@@ -17,12 +19,15 @@ UPDATE 9.20.2012 - I have merged this library with Flint (http://github.com/cif/
     Command Line Usage: 
 
     Options:
-      -i, --in        Specify an input templates directory                            [default: "./app/handlebars/"]
-      -o, --out       Specify an output file into which templates are compiled        [default: "./public/javascript/templates.js"]
-      -w, --watch     Watch your handlebars files and compile when changes occur      [default: false]
-      -r, --readable  Make the output more readable by avoiding default minification  [default: false]
-      
-    
+       -i, --in          Specify an input templates directory                                                                      [default: "./app/handlebars/"]
+       -o, --out         Specify an output file into which templates are compiled                                                  [default: "./public/javascript/templates.js"]
+       -w, --watch       Watch your handlebars files and compile when changes occur                                                [default: false]
+       -r, --readable    Make the output more readable by avoiding default minification                                            [default: false]
+       -e, --extensions  Add more extensions to the defaults for templates that Handlebar-Rider will compile                       [default: [".hb",".hbs",".handlebars"]]
+       -f, --force       Forces all files found in the input directory to be compiled. Performance gains are not unheard of here.  [default: false]
+       -s, --strip       Strip all comments from templates to clean up un-minified output                                          [default: false]
+       -c, --compact     Hides the application name in command line logging for a more compact view                                [default: true]
+
 
 ## npm module usage			
 

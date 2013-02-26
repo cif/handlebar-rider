@@ -2,7 +2,7 @@
   "author"         : "Ben Ipsen <email@benipsen.com>",
   "name"           : "handlebar-rider",
   "description"    : "Compiles/watches a directory of handlebar templates files and precompiles into single js output file",
-  "version"        : "0.1.13",
+  "version"        : "0.1.20",
 
   "repository"     : {
     "type"           : "git",
@@ -19,7 +19,7 @@
   },
 
   "engines"        : {
-    "node"           : ">= 0.4.9"
+    "node"           : ">= 0.8.0"
   },
   
   "dependencies" : {
