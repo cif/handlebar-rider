@@ -6,9 +6,9 @@ concatenate them into a single javascript file.
 
 The directory structure you use will namespace the templates with ['directory/template'] as with JST et all
 
-UPDATE 2.25.2013 - @piercemoore has contributed some AMAZING updates to this project available on the command line.
+UPDATE 2.25.2013 - [@piercemoore](http://github.com/piercemoore/) has contributed some AMAZING updates to this project available on the command line.
 
-UPDATE 9.20.2012 - I have merged this library with Flint (http://github.com/cif/flint) however, changes contributed by others are welcome and always merged.
+UPDATE 9.20.2012 - I have merged this library with [Flint](http://github.com/cif/flint) however, changes contributed by others are welcome and always merged.
 
 ## Install:
 
