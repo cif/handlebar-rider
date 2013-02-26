@@ -29,6 +29,7 @@
     "supercli" : "*",
     "underscore" : "*",
     "watch" : "*",
-    "async" : "*"
+    "async" : "*",
+    "path" : "*"
   }
 }
